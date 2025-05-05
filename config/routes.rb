@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get("/", { :controller => "misc", :action => "homepage" })
 
+  
   get("/directors/youngest", { :controller => "directors", :action => "max_dob" })
   get("/directors/eldest", { :controller => "directors", :action => "min_dob" })
 
